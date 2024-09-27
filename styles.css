@@ -1,0 +1,102 @@
+/* Estilos generales */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to bottom, #F8BBD0, #880E4F);
+    background-size: 100% 100%;
+    margin: 0;
+}
+
+/* Estilizar títulos */
+h1.display-4 {
+    font-size: 3.5rem;
+    color: #FFFFFF; /* Texto blanco para contraste */
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #FFFFFF; /* Texto blanco para contraste */
+}
+
+h3 {
+    font-size: 1.75rem;
+    color: #FFFFFF; /* Texto blanco para contraste */
+}
+
+/* Estilizar párrafos */
+p.lead {
+    font-size: 1.25rem;
+    color: #FFFFFF; /* Texto blanco para contraste */
+}
+
+/* Estilos para las secciones */
+section {
+    color: #FFFFFF; /* Texto blanco para todas las secciones */
+    padding-top: 100px;
+}
+
+/* Ajuste del color de fondo de las secciones para que sean transparentes */
+#header, #historia, #galeria, #mensajes {
+    background-color: transparent;
+}
+
+/* Pie de Página */
+footer {
+    background-color: transparent;
+    color: #FFFFFF;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Efectos en la galería de imágenes */
+#galeria img {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#galeria img:hover {
+    transform: scale(1.15);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Estilos para la navegación */
+.navbar {
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgba(136, 14, 79, 0.8); /* Fondo semi-transparente */
+}
+
+.navbar-brand, .nav-link {
+    color: #191414 !important;
+}
+
+/* Corrección para el menú fijo */
+body {
+    padding-top: 70px;
+}
+
+/* Estilos adicionales para asegurar legibilidad */
+.text-center {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para los corazones del cursor */
+.heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url('images/corazon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    animation: fadeOut 2s forwards;
+    z-index: 9999;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: scale(2) translateY(-20px);
+    }
+}
